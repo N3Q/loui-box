@@ -3,14 +3,18 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "loui-box-rfid"
-version = "0.0.1"
+name = "loui_box_rfid"
+version = "0.0.4"
 authors = [
     { name="Karsten Fix", email="karstenfix@gmx.net" }
 ]
 description = "Pyhton package to readout an USB Device, that suppose to be a RFID Reader."
 readme = "Readme.md"
 requires-python = ">= 3.7"
+
+dependencies = [
+    "evdev"
+]
 
 [project.urls]
 "Homepage" = "https://github.com/N3Q/loui-box/backend/rfid/loui-box-rfid"
